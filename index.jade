@@ -1,0 +1,10 @@
+body(onload="initialize()")
+  h3 Drag or re-shape for coordinates to display below
+  h3
+    a(href="http://codepen.io/jhawes/blog/creating-a-real-estate-polygon-tool") See blog post
+  #map-canvas
+  .lngLat
+    span.one Lat
+    span.two ,Lng
+button#clipboard-btn(onclick="copyToClipboard(document.getElementById('info').innerHTML)") Copy to Clipboard
+textarea#info
