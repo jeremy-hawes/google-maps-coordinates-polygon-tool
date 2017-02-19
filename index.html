@@ -1,36 +1,25 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Google Maps Polygon Coordinates Tool</title>
-    
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
+<html>
 
-    
-    
-    
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Google Maps Polygon Coordinates Tool</title>
+  <link rel="stylesheet" href="css/style.css">
 
-  <body>
+</head>
 
-    
+
 <body onload="initialize()">
   <h3>Drag or re-shape for coordinates to display below</h3>
   <h3><a href="http://codepen.io/jhawes/blog/creating-a-real-estate-polygon-tool">See blog post</a></h3>
   <div id="map-canvas"></div>
   <div class="lngLat"><span class="one">Lat</span><span class="two">,Lng</span></div>
+  <button id="clipboard-btn" onclick="copyToClipboard(document.getElementById('info').innerHTML)">Copy to Clipboard</button>
+  <textarea id="info"></textarea>
+
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false'></script>
+  <script src="js/index.js"></script>
+
 </body>
-<button id="clipboard-btn" onclick="copyToClipboard(document.getElementById('info').innerHTML)">Copy to Clipboard</button>
-<textarea id="info"></textarea>
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false'></script>
 
-        <script src="js/index.js"></script>
-
-    
-    
-    
-  </body>
 </html>
